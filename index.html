@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+</head>
+<body>
+
+    <h1>🏠 Smart Home Control</h1>
+    
+    <div class="container">
+        <div class="card">
+            <h3>🌡️ Temperature</h3>
+            <div id="temp" class="value">--</div><span>°C</span>
+        </div>
+        <div class="card">
+            <h3>💧 Humidity</h3>
+            <div id="hum" class="value">--</div><span>%</span>
+        </div>
+        <div class="card">
+            <h3>📏 Distance</h3>
+            <div id="dist" class="value">--</div><span>cm</span>
+        </div>
+    </div>
+
+    <br><br>
+    
+    <div class="card main-control">
+        <h3>💡 Light Control</h3>
+        <button id="lightBtn" class="btn off" onclick="toggleLight()">OFF</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
